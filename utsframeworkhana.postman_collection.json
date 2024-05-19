@@ -1,0 +1,497 @@
+{
+	"info": {
+		"_postman_id": "24bba233-02a3-41e4-89b1-c241a25a5476",
+		"name": "utsframeworkhana",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33556757",
+		"_collection_link": "https://galactic-flare-569432.postman.co/workspace/New-Team-Workspace~f9793b8b-ed7c-4157-ba15-e811a73e8e69/collection/33556757-24bba233-02a3-41e4-89b1-c241a25a5476?action=share&source=collection_link&creator=33556757"
+	},
+	"item": [
+		{
+			"name": "LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"hanamarlia81@gmail.com\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hana.webframework.my.id/api/login",
+					"protocol": "https",
+					"host": [
+						"hana",
+						"webframework",
+						"my",
+						"id"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"HANA MARLIA\",\r\n    \"email\": \"hana@gmail.com\",\r\n    \"password\": \"password\",\r\n    \"password_confirmation\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hana.webframework.my.id/api/register",
+					"protocol": "https",
+					"host": [
+						"hana",
+						"webframework",
+						"my",
+						"id"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add categories",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzE2MDMyMTMwLCJleHAiOjE3MTYwMzU3MzAsIm5iZiI6MTcxNjAzMjEzMCwianRpIjoiZDBDck5ZdkNpQ2FhbTZPMiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.my9AummYOXScRc6CDqi4wB0AKLckgSAfPIjWWX-XD48",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"baju\"  \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hana.webframework.my.id/api/categories",
+					"protocol": "https",
+					"host": [
+						"hana",
+						"webframework",
+						"my",
+						"id"
+					],
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "read category",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzE2MDMyMTMwLCJleHAiOjE3MTYwMzU3MzAsIm5iZiI6MTcxNjAzMjEzMCwianRpIjoiZDBDck5ZdkNpQ2FhbTZPMiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.my9AummYOXScRc6CDqi4wB0AKLckgSAfPIjWWX-XD48",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hana.webframework.my.id/api/categories",
+					"protocol": "https",
+					"host": [
+						"hana",
+						"webframework",
+						"my",
+						"id"
+					],
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "read category by id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzE2MDMyMTMwLCJleHAiOjE3MTYwMzU3MzAsIm5iZiI6MTcxNjAzMjEzMCwianRpIjoiZDBDck5ZdkNpQ2FhbTZPMiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.my9AummYOXScRc6CDqi4wB0AKLckgSAfPIjWWX-XD48",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://hana.webframework.my.id/api/categories/1",
+					"protocol": "https",
+					"host": [
+						"hana",
+						"webframework",
+						"my",
+						"id"
+					],
+					"path": [
+						"api",
+						"categories",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit category by id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzE2MDMyMTMwLCJleHAiOjE3MTYwMzU3MzAsIm5iZiI6MTcxNjAzMjEzMCwianRpIjoiZDBDck5ZdkNpQ2FhbTZPMiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.my9AummYOXScRc6CDqi4wB0AKLckgSAfPIjWWX-XD48",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://hana.webframework.my.id/api/categories/1",
+					"protocol": "https",
+					"host": [
+						"hana",
+						"webframework",
+						"my",
+						"id"
+					],
+					"path": [
+						"api",
+						"categories",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete category",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzE2MDMyMTMwLCJleHAiOjE3MTYwMzU3MzAsIm5iZiI6MTcxNjAzMjEzMCwianRpIjoiZDBDck5ZdkNpQ2FhbTZPMiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.my9AummYOXScRc6CDqi4wB0AKLckgSAfPIjWWX-XD48",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://hana.webframework.my.id/api/categories/1",
+					"protocol": "https",
+					"host": [
+						"hana",
+						"webframework",
+						"my",
+						"id"
+					],
+					"path": [
+						"api",
+						"categories",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add produk",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzE2MDMyMTMwLCJleHAiOjE3MTYwMzU3MzAsIm5iZiI6MTcxNjAzMjEzMCwianRpIjoiZDBDck5ZdkNpQ2FhbTZPMiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.my9AummYOXScRc6CDqi4wB0AKLckgSAfPIjWWX-XD48",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"sepatu sneakers\",\r\n    \"description\": \"Deskripsi produk baru\",\r\n    \"price\": 300000, // Harga produk dalam satuan mata uang (misalnya Rupiah) // URL gambar produk (opsional)\r\n    \"expired_at\": \"2024-12-31\", // Tanggal kadaluarsa produk (opsional)\r\n    \"category_id\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hana.webframework.my.id/api/products",
+					"protocol": "https",
+					"host": [
+						"hana",
+						"webframework",
+						"my",
+						"id"
+					],
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit produk",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzE2MDMyMTMwLCJleHAiOjE3MTYwMzU3MzAsIm5iZiI6MTcxNjAzMjEzMCwianRpIjoiZDBDck5ZdkNpQ2FhbTZPMiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.my9AummYOXScRc6CDqi4wB0AKLckgSAfPIjWWX-XD48",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Example Product\",\r\n    \"description\": \"This is an example product\",\r\n    \"price\": 300.0,\r\n    \"category_id\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hana.webframework.my.id/api/products/1",
+					"protocol": "https",
+					"host": [
+						"hana",
+						"webframework",
+						"my",
+						"id"
+					],
+					"path": [
+						"api",
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "read product by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzE2MDMyMTMwLCJleHAiOjE3MTYwMzU3MzAsIm5iZiI6MTcxNjAzMjEzMCwianRpIjoiZDBDck5ZdkNpQ2FhbTZPMiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.my9AummYOXScRc6CDqi4wB0AKLckgSAfPIjWWX-XD48",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hana.webframework.my.id/api/products/1",
+					"protocol": "https",
+					"host": [
+						"hana",
+						"webframework",
+						"my",
+						"id"
+					],
+					"path": [
+						"api",
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete produk",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzE2MDMyMTMwLCJleHAiOjE3MTYwMzU3MzAsIm5iZiI6MTcxNjAzMjEzMCwianRpIjoiZDBDck5ZdkNpQ2FhbTZPMiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.my9AummYOXScRc6CDqi4wB0AKLckgSAfPIjWWX-XD48",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://hana.webframework.my.id/api/products/1",
+					"protocol": "https",
+					"host": [
+						"hana",
+						"webframework",
+						"my",
+						"id"
+					],
+					"path": [
+						"api",
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "google get token jwt",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "headerPrefix",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "99462941207-ak36trn4etpth9mmeslnsncc673j4o3j.apps.googleusercontent.com",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "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",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "body",
+							"type": "string"
+						},
+						{
+							"key": "scope",
+							"value": "https://www.googleapis.com/auth/userinfo.email",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://oauth2.googleapis.com/token",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://accounts.google.com/o/oauth2/v2/auth",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "google",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": true,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://hana.webframework.my.id/api/login/google/callback",
+					"protocol": "https",
+					"host": [
+						"hana",
+						"webframework",
+						"my",
+						"id"
+					],
+					"path": [
+						"api",
+						"login",
+						"google",
+						"callback"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
